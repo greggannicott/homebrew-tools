@@ -2,7 +2,7 @@
 
 ## About
 
-See [http://git](https://github.com/greggannicott/tmux-too-young).
+See https://github.com/greggannicott/tmux-too-young.
 
 ## Installation
 
