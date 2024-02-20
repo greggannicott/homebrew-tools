@@ -1,1 +1,20 @@
-# homebrew-tools
+# tmuz-too-young
+
+## About
+
+See [http://git](https://github.com/greggannicott/tmux-too-young).
+
+## Installation
+
+Install with:
+
+```bash
+brew inst.all greggannicott/tools/tmux-too-young
+```
+
+Update to the latest version using:
+
+```bash
+brew update
+brew upgrade tmux-too-young
+```
