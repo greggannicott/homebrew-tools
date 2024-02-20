@@ -1,4 +1,4 @@
-# tmuz-too-young
+# tmux-too-young
 
 ## About
 
