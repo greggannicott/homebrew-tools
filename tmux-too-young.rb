@@ -5,20 +5,20 @@
 class TmuxTooYoung < Formula
   desc ""
   homepage "https://github.com/greggannicott/tmux-too-young"
-  version "0.0.10"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/greggannicott/tmux-too-young/releases/download/v0.0.10/tmux-too-young_Darwin_arm64.tar.gz"
-      sha256 "345a763840de7767979362a7b3ffc465ee7b5bafa1f14f1fe9de4ab74ad7acc1"
+      url "https://github.com/greggannicott/tmux-too-young/releases/download/v0.1.0/tmux-too-young_Darwin_arm64.tar.gz"
+      sha256 "87dea030475f67bb8e3168d664dfceb5cccbaac8bec281f5e427d9ad7aa993ca"
 
       def install
         bin.install "tmux-too-young"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/greggannicott/tmux-too-young/releases/download/v0.0.10/tmux-too-young_Darwin_x86_64.tar.gz"
-      sha256 "7a8e980d8820a511f27be9d60706399864a01122408c798458fdb2c9e1f650b5"
+      url "https://github.com/greggannicott/tmux-too-young/releases/download/v0.1.0/tmux-too-young_Darwin_x86_64.tar.gz"
+      sha256 "3abe4769d9201c98af9cdfd155aa5ae5a5ff4c102894ad3b7ad012989fee6a2f"
 
       def install
         bin.install "tmux-too-young"
@@ -27,17 +27,17 @@ class TmuxTooYoung < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/greggannicott/tmux-too-young/releases/download/v0.0.10/tmux-too-young_Linux_arm64.tar.gz"
-      sha256 "8664d6c087f9c5831878d9495629e6e8c00bd2c093c321f8de5836fca48f3867"
+    if Hardware::CPU.intel?
+      url "https://github.com/greggannicott/tmux-too-young/releases/download/v0.1.0/tmux-too-young_Linux_x86_64.tar.gz"
+      sha256 "c6b4d83a2d990b516f97ea9883949b4e8dc91094066f8af15a8db71e09e312c6"
 
       def install
         bin.install "tmux-too-young"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/greggannicott/tmux-too-young/releases/download/v0.0.10/tmux-too-young_Linux_x86_64.tar.gz"
-      sha256 "3a238dc8bc392ec629ae762fcffcdc2624f0140e86f66337a912342ac756a504"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/greggannicott/tmux-too-young/releases/download/v0.1.0/tmux-too-young_Linux_arm64.tar.gz"
+      sha256 "677d485a0042b57b98411f136f34edacb307577613e766e999eb83f18ed00be2"
 
       def install
         bin.install "tmux-too-young"
