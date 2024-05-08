@@ -9,7 +9,7 @@ See https://github.com/greggannicott/tmux-too-young.
 Install with:
 
 ```bash
-brew inst.all greggannicott/tools/tmux-too-young
+brew install greggannicott/tools/tmux-too-young
 ```
 
 Update to the latest version using:
