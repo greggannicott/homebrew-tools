@@ -5,20 +5,20 @@
 class Tmarks < Formula
   desc ""
   homepage "https://github.com/greggannicott/tmarks"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/greggannicott/tmarks/releases/download/v0.0.3/tmarks_Darwin_x86_64.tar.gz"
-      sha256 "183a8cd97a1e136f62ca5cdf160555bb0a220d594000be625f6dd3a53cbbef58"
+      url "https://github.com/greggannicott/tmarks/releases/download/v0.0.4/tmarks_Darwin_x86_64.tar.gz"
+      sha256 "2bc2dc683a5db14fc77b901f4a10a341778f63ef2d5291b8dc852d4fcaa437f6"
 
       def install
         bin.install "tmarks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/greggannicott/tmarks/releases/download/v0.0.3/tmarks_Darwin_arm64.tar.gz"
-      sha256 "eb14edf74bcb3c6abd4576ccdfac5977aeeea4de30e33051cd510fda272a692d"
+      url "https://github.com/greggannicott/tmarks/releases/download/v0.0.4/tmarks_Darwin_arm64.tar.gz"
+      sha256 "53392957a4c5cb7b37b076754615dae411e561901c045d19dd54c3505cb63f85"
 
       def install
         bin.install "tmarks"
@@ -28,16 +28,16 @@ class Tmarks < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/greggannicott/tmarks/releases/download/v0.0.3/tmarks_Linux_x86_64.tar.gz"
-      sha256 "69f3ed71fcc9223b572130d6db2f79bfaaaf0dea29d7e2cb9e1b7b6bb7221c0a"
+      url "https://github.com/greggannicott/tmarks/releases/download/v0.0.4/tmarks_Linux_x86_64.tar.gz"
+      sha256 "c181ce80c176d86a669a02afe785cb48d5b48a82d2f32f1790f2a19c9c39e7dd"
 
       def install
         bin.install "tmarks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/greggannicott/tmarks/releases/download/v0.0.3/tmarks_Linux_arm64.tar.gz"
-      sha256 "c91fceb6b90446f4bddddfe75b31336e87847467c1c1aeb4ad8dfb9fe57e1ba9"
+      url "https://github.com/greggannicott/tmarks/releases/download/v0.0.4/tmarks_Linux_arm64.tar.gz"
+      sha256 "f0ba047e578a2a346ad41b394b282cf5479aca41bc5a2768465644be0afb232c"
 
       def install
         bin.install "tmarks"
